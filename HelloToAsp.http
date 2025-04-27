@@ -1,6 +1,46 @@
-@HelloToAsp_HostAddress = http://localhost:5287
+@HelloToAsp_HostAddress = https://localhost:44367
 
 GET {{HelloToAsp_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+GET {{HelloToAsp_HostAddress}}/api/todolist
+
+###
+
+POST {{HelloToAsp_HostAddress}}/api/todolist
+Content-Type: application/json
+
+{
+    "id": 1,
+    "task": "heyyy",
+    "startDateTime": "2001-01-01",
+    "endDateTime": "2002-02-05",
+    "duration": 450,
+    "description": "test"
+}
+
+###
+
+@id=67
+DELETE {{HelloToAsp_HostAddress}}/api/todolist/{{id}}
+
+###
+
+GET {{HelloToAsp_HostAddress}}/api/todolist/{{id}}
+
+###
+
+PUT {{HelloToAsp_HostAddress}}/api/todolist/{{id}}
+Content-Type: application/json
+
+{
+      "task": "heyyy sana",
+      "startDateTime": "1999-01-01",
+      "endDateTime": "1999-02-05",
+      "duration": 5,
+      "description": "sana test"
+}
 
 ###

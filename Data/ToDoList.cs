@@ -4,7 +4,9 @@ public class ToDoList
 {
     public int Id { get; set; }
     public string Task { get; set; }
-    public string? StartDateTime { get; set; }
-    public string? EndDateTime { get; set; }
+    public DateOnly? StartDateTime { get; set; }
+    public DateOnly? EndDateTime { get; set; }
     public int? Duration { get; set; }
+    public string? Description { get; set; }
+    public bool IsCompleted { get; set; } = false;
 }
