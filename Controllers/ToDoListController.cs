@@ -17,6 +17,7 @@ namespace HelloToAsp.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<ToDoList>> Get()
         {
+            // IEnumerable this interface just can be read despite of IList and ICollection
             return Ok(tasks);
         }
 

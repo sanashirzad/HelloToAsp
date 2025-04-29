@@ -1,4 +1,7 @@
+using HelloToAsp.Configs;
+using HelloToAsp.Contracts;
 using HelloToAsp.DB;
+using HelloToAsp.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +17,8 @@ builder.Services.AddDbContext<ToDoListContext>(options =>
 
 builder.Services.AddControllers();
 
+builder.Services.AddSwaggerGen();
+
 builder.Services.AddOpenApi();
 
 builder.Services.AddCors(options =>
@@ -24,12 +29,19 @@ builder.Services.AddCors(options =>
         .AllowAnyMethod());
 });
 
+builder.Services.AddAutoMapper(typeof(Mapper));
+
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 // bellow codes are middleware pipeline
