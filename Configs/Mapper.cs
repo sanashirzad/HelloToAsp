@@ -9,10 +9,10 @@ namespace HelloToAsp.Configs
     {
         public Mapper()
         {
-            CreateMap<User, CreateDto>().ReverseMap();
-            CreateMap<User, GetDto>().ReverseMap();
-            CreateMap<User, GetDetailsDto>().ReverseMap();
-            CreateMap<User, UpdateDto>().ReverseMap();
+            CreateMap<User, Dtos.User.CreateDto>().ReverseMap();
+            CreateMap<User, Dtos.User.GetDto>().ReverseMap();
+            CreateMap<User, Dtos.User.GetDetailsDto>().ReverseMap();
+            CreateMap<User, Dtos.User.UpdateDto>().ReverseMap();
 
             CreateMap<ToDoList, ToDoListDto>().ReverseMap();
         }

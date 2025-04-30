@@ -33,6 +33,7 @@ builder.Services.AddAutoMapper(typeof(Mapper));
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<ToDoListRepository, IToDoListRepository>();
 
 var app = builder.Build();
 

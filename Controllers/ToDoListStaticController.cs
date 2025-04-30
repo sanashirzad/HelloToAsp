@@ -5,7 +5,7 @@ namespace HelloToAsp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ToDoListController : ControllerBase
+    public class ToDoListStaticController : ControllerBase
     {
         private static List<ToDoList> tasks = new List<ToDoList>
         {
@@ -13,7 +13,7 @@ namespace HelloToAsp.Controllers
             new ToDoList { Id = 2, Task = "learn asp.net core 6", Duration = 10 },
         };
 
-        // GET: api/<ToDoListController>
+        // GET: api/<ToDoListStaticController>
         [HttpGet]
         public ActionResult<IEnumerable<ToDoList>> Get()
         {
@@ -21,7 +21,7 @@ namespace HelloToAsp.Controllers
             return Ok(tasks);
         }
 
-        // GET api/<ToDoListController>/5
+        // GET api/<ToDoListStaticController>/5
         [HttpGet("{id}")]
         public ActionResult<ToDoList> Get(int id)
         {
@@ -35,7 +35,7 @@ namespace HelloToAsp.Controllers
             return Ok(task);
         }
 
-        // POST api/<ToDoListController>
+        // POST api/<ToDoListStaticController>
         [HttpPost]
         public ActionResult<ToDoList> Post([FromBody] ToDoList value)
         {
@@ -49,7 +49,7 @@ namespace HelloToAsp.Controllers
             return CreatedAtAction(nameof(Get), new { id = value.Id }, value);
         }
 
-        // PUT api/<ToDoListController>/5
+        // PUT api/<ToDoListStaticController>/5
         [HttpPut("{id}")]
         public ActionResult<ToDoList> Put(int id, [FromBody] ToDoList value)
         {
@@ -67,7 +67,7 @@ namespace HelloToAsp.Controllers
             return Ok(existedTask);
         }
 
-        // DELETE api/<ToDoListController>/5
+        // DELETE api/<ToDoListStaticController>/5
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
