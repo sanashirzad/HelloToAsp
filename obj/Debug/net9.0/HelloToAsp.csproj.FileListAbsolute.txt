@@ -1,0 +1,8 @@
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.csproj.AssemblyReference.cache
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.GeneratedMSBuildEditorConfig.editorconfig
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.AssemblyInfoInputs.cache
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.AssemblyInfo.cs
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.csproj.CoreCompileInputs.cache
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.MvcApplicationPartsAssemblyInfo.cs
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.MvcApplicationPartsAssemblyInfo.cache
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.sourcelink.json
