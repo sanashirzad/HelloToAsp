@@ -2,6 +2,7 @@
 using HelloToAsp.Contracts;
 using HelloToAsp.Data;
 using HelloToAsp.Dtos.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +10,7 @@ namespace HelloToAsp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "SuperAdmin")]
     public class UsersController : ControllerBase
     {
         private readonly IUsersRepository _usersRepository;
@@ -53,7 +55,7 @@ namespace HelloToAsp.Controllers
 
         // PUT: api/Users/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutUser(int id, UpdateDto user)
+        public async Task<IActionResult> PutUser(int id, [FromForm] UpdateDto user)
         {
             if (id != user.Id)
             {
@@ -96,7 +98,7 @@ namespace HelloToAsp.Controllers
 
         // POST: api/Users
         [HttpPost]
-        public async Task<ActionResult<GetDetailsDto>> PostUser(CreateDto user)
+        public async Task<ActionResult> PostUser([FromForm] CreateDto user)
         {
             // should use below code if do not use auto mapper
             //var newUser = new User
@@ -111,7 +113,7 @@ namespace HelloToAsp.Controllers
 
             await _usersRepository.AddAsync(newUser);
 
-            return CreatedAtAction("GetUser", new { id = newUser.Id }, newUser);
+            return NoContent();
         }
 
         // DELETE: api/Users/5

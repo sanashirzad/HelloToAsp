@@ -1,9 +1,13 @@
 ﻿using HelloToAsp.Data;
+using HelloToAsp.Data.Configs;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace HelloToAsp.DB
 {
-    public class ToDoListContext : DbContext
+    public class ToDoListContext : IdentityDbContext<User, IdentityRole<int>, int>
     {
         public ToDoListContext(DbContextOptions options) : base(options)
         {
@@ -15,57 +19,15 @@ namespace HelloToAsp.DB
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new RoleConfig());
+            modelBuilder.ApplyConfiguration(new UserConfig());
+            modelBuilder.ApplyConfiguration(new ToDolistConfig());
+        }
 
-            modelBuilder.Entity<User>().HasData(
-                new User
-                {
-                    Id = 1,
-                    FirstName = "Sana",
-                    LastName = "Shirzad",
-                    PhoneNumber = "09917878501",
-                },
-                new User
-                {
-                    Id = 2,
-                    FirstName = "AmirAli",
-                    LastName = "Mahmoodi",
-                    PhoneNumber = "09917878502",
-                },
-                new User
-                {
-                    Id = 3,
-                    FirstName = "John",
-                    LastName = "Bosch",
-                    PhoneNumber = "09917878503",
-                }
-            );
-
-            modelBuilder.Entity<ToDoList>().HasData(
-                new ToDoList
-                {
-                    Id = 1,
-                    Task = "finish C#",
-                    Duration = 50,
-                    UserId = 1,
-                },
-                new ToDoList
-                {
-                    Id = 2,
-                    Task = "start asp.net core",
-                    Duration = 150,
-                    UserId = 3,
-                    StartDateTime = new DateOnly(2025, 5, 21),
-                    EndDateTime = new DateOnly(2025, 5, 26),
-                },
-                new ToDoList
-                {
-                    Id = 3,
-                    Task = "start git",
-                    Duration = 20,
-                    UserId = 2,
-                    Description = "test"
-                }
-            );
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.ConfigureWarnings(warnings =>
+                warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
     }
 }

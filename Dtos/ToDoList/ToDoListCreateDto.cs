@@ -1,6 +1,6 @@
 ﻿namespace HelloToAsp.Dtos.ToDoList
 {
-    public class CreateDto : BaseDto
+    public class ToDoListCreateDto : BaseDto
     {
     }
 }

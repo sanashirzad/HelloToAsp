@@ -2,10 +2,10 @@
 
 namespace HelloToAsp.Dtos.ToDoList
 {
-    public class GetDetailsDto : BaseDto
+    public class ToDoListGetDetailsDto : BaseDto
     {
         public int Id { get; set; }
         public bool IsCompleted { get; set; }
-        public UserDto users { get; set; }
+        public UserDto User { get; set; }
     }
 }
