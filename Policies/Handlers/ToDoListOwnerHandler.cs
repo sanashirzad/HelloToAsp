@@ -1,4 +1,5 @@
 ﻿using HelloToAsp.Data;
+using HelloToAsp.Extensions;
 using HelloToAsp.Policies.Requirements;
 using Microsoft.AspNetCore.Authorization;
 
@@ -12,7 +13,7 @@ namespace HelloToAsp.Policies.Handlers
             ToDoList resource
             )
         {
-            var userId = Int32.Parse(context.User.Claims.First(x => x.Type.Equals("Id")).Value);
+            var userId = context.User.GetAuthUserId();
 
             if (userId == resource.UserId)
             {

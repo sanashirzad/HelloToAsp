@@ -16,6 +16,9 @@ namespace HelloToAsp.Repositories
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _configuration;
 
+        private const string _loginProvider = "ToDoList";
+        private const string _refreshTokenName = "RefreshToken";
+
         public AuthManager(IMapper mapper,
             UserManager<User> userManager,
             IConfiguration configuration
@@ -24,6 +27,20 @@ namespace HelloToAsp.Repositories
             _mapper = mapper;
             _userManager = userManager;
             _configuration = configuration;
+        }
+
+        private async Task<string> CreateRefreshToken(User user)
+        {
+            // Without removing the old token first, you might end up with multiple valid refresh
+            // tokens for the same user/provider combination, which increases security risks
+            await _userManager.RemoveAuthenticationTokenAsync(user, _loginProvider, _refreshTokenName);
+
+            var newRefreshToken = await _userManager.GenerateUserTokenAsync(user, _loginProvider, _refreshTokenName);
+
+            // set the token in database
+            await _userManager.SetAuthenticationTokenAsync(user, _loginProvider, _refreshTokenName, newRefreshToken);
+
+            return newRefreshToken;
         }
 
         public async Task<AuthResponseDto> Login(LogUserDto logUserDto)
@@ -36,11 +53,10 @@ namespace HelloToAsp.Repositories
                 return null;
             }
 
-            var token = await GenerateToken(user);
-
             return new AuthResponseDto
             {
-                Token = token,
+                Token = await GenerateToken(user),
+                RefreshToken = await CreateRefreshToken(user)
             };
         }
 
@@ -58,6 +74,34 @@ namespace HelloToAsp.Repositories
             }
 
             return result.Errors;
+        }
+
+        public async Task<AuthResponseDto> VerifyRefreshToken(AuthResponseDto request)
+        {
+            var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
+            var tokenContent = jwtSecurityTokenHandler.ReadJwtToken(request.Token);
+            var userName = tokenContent.Claims.First(x => x.Type == JwtRegisteredClaimNames.Sub).Value;
+            var user = await _userManager.FindByNameAsync(userName);
+
+            if (user == null)
+            {
+                return null;
+            }
+
+            var isValidRefreshToken = await _userManager.VerifyUserTokenAsync(user, _loginProvider, _refreshTokenName, request.RefreshToken);
+
+            if (isValidRefreshToken)
+            {
+                return new AuthResponseDto
+                {
+                    Token = await GenerateToken(user),
+                    RefreshToken = await CreateRefreshToken(user)
+                };
+            }
+
+            await _userManager.UpdateSecurityStampAsync(user);
+
+            return null;
         }
 
         private async Task<string> GenerateToken(User user)

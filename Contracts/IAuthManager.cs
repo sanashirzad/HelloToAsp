@@ -7,5 +7,6 @@ namespace HelloToAsp.Contracts
     {
         Task<IEnumerable<IdentityError>> Register(RegUserDto regUserDto);
         Task<AuthResponseDto> Login(LogUserDto logUserDto);
+        Task<AuthResponseDto> VerifyRefreshToken(AuthResponseDto request);
     }
 }

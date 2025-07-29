@@ -1,4 +1,4 @@
-using HelloToAsp.Configs;
+﻿using HelloToAsp.Configs;
 using HelloToAsp.Contracts;
 using HelloToAsp.Data;
 using HelloToAsp.DB;
@@ -72,7 +72,12 @@ builder.Services.AddCors(options =>
 builder.Services.AddAutoMapper(typeof(Mapper));
 
 builder.Services.AddIdentity<User, IdentityRole<int>>()
+    .AddTokenProvider<DataProtectorTokenProvider<User>>("ToDoList") // maybe we have different providers like todolist, users and etc 
     .AddEntityFrameworkStores<ToDoListContext>()
+    .AddDefaultTokenProviders()
+    // وقتی کاربر می‌خواهد رمز عبورش را ریست کند، یک لینک با یک توکن (کد امنیتی) برایش ایمیل می‌شود
+    // وقتی کاربر اکانتش را تأیید می‌کند، یک توکن به ایمیلش فرستاده می‌شود
+    // وقتی دو مرحله‌ای (2FA) فعال است، یک کد برای کاربر ارسال می‌شود
     .AddDefaultTokenProviders();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
