@@ -1,0 +1,6 @@
+2025-07-29 14:18:55.794 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 14:18:56.000 +03:30 [INF] Hosting environment: Development
+2025-07-29 14:18:56.001 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-07-29 14:20:42.477 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-29 14:20:42.496 +03:30 [INF] Hosting environment: Development
+2025-07-29 14:20:42.497 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp

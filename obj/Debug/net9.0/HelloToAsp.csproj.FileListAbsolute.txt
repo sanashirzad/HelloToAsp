@@ -279,3 +279,14 @@ D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\refint\HelloTo
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.pdb
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\HelloToAsp.genruntimeconfig.cache
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\obj\Debug\net9.0\ref\HelloToAsp.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.AspNetCore.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Expressions.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Extensions.Hosting.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Extensions.Logging.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Formatting.Compact.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Settings.Configuration.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.Console.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.File.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.Seq.dll

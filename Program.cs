@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -69,6 +70,8 @@ builder.Services.AddCors(options =>
         .AllowAnyMethod());
 });
 
+builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration((ctx.Configuration)));
+
 builder.Services.AddAutoMapper(typeof(Mapper));
 
 builder.Services.AddIdentity<User, IdentityRole<int>>()
@@ -126,6 +129,8 @@ if (app.Environment.IsDevelopment())
 }
 
 // bellow codes are middleware pipeline
+
+app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 
