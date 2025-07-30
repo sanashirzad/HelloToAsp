@@ -9,10 +9,12 @@ namespace HelloToAsp.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthManager _authManager;
+        private readonly ILogger<AuthController> _logger;
 
-        public AuthController(IAuthManager authManager)
+        public AuthController(IAuthManager authManager, ILogger<AuthController> logger)
         {
             _authManager = authManager;
+            _logger = logger;
         }
 
         // POST: api/Auth/register
@@ -23,19 +25,31 @@ namespace HelloToAsp.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Register([FromForm] RegUserDto userDto)
         {
-            var errors = await _authManager.Register(userDto);
+            _logger.LogInformation($"Registration Attempt for {userDto.PhoneNumber}");
 
-            if (errors.Any())
+            try
             {
-                foreach (var error in errors)
+                var errors = await _authManager.Register(userDto);
+
+                if (errors.Any())
                 {
-                    ModelState.AddModelError(error.Code, error.Description);
+                    foreach (var error in errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+
+                    return BadRequest(ModelState);
                 }
 
-                return BadRequest(ModelState);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something Went Wrong in the {nameof(Register)} - Registration Attempt for {userDto.PhoneNumber}");
+
+                return Problem($"Something Went Wrong in the {nameof(Register)}", statusCode: 500);
             }
 
-            return Ok();
         }
 
         // POST: api/Auth/login
