@@ -1,11 +1,12 @@
 ﻿using HelloToAsp.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HelloToAsp.Controllers
+namespace HelloToAsp.Controllers.v1
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:ApiVersion}/[controller]")]
     [ApiController]
-    public class ToDoListStaticController : ControllerBase
+    [ApiVersion("1.0", Deprecated = true)]
+    public class ToDoListsController : ControllerBase
     {
         private static List<ToDoList> tasks = new List<ToDoList>
         {

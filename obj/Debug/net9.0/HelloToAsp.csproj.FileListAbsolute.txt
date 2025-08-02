@@ -290,3 +290,5 @@ D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.Debug.dll
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.File.dll
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.Seq.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll

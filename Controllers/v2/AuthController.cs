@@ -2,7 +2,7 @@
 using HelloToAsp.Dtos.Auth;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HelloToAsp.Controllers
+namespace HelloToAsp.Controllers.v2
 {
     [Route("api/[controller]")]
     [ApiController]

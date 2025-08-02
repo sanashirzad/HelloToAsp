@@ -8,11 +8,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace HelloToAsp.Controllers
+namespace HelloToAsp.Controllers.v2
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:ApiVersion}/[controller]")]
     [ApiController]
     [Authorize(Roles = "SuperAdmin,Admin")]
+    [ApiVersion("2.0")]
     public class ToDoListsController : ControllerBase
     {
         private readonly IToDoListRepository _toDoListRepository;
@@ -32,7 +33,7 @@ namespace HelloToAsp.Controllers
 
         // GET: api/ToDoLists
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ToDoListDto>>> GetToDoLists()
+        public async Task<ActionResult<IEnumerable<ToDoListDto>>> Get()
         {
             var userId = User.GetAuthUserId();
 
@@ -43,11 +44,11 @@ namespace HelloToAsp.Controllers
 
         // GET: api/ToDoLists/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ToDoListGetDetailsDto>> GetToDoList(int id)
+        public async Task<ActionResult<ToDoListGetDetailsDto>> Get(int id)
         {
             var userId = User.GetAuthUserId(); // fetch auth id globally
 
-            var toDoList = await _toDoListRepository.GetAsync(userId, id) ?? throw new NotFoundException(nameof(GetToDoList), id);
+            var toDoList = await _toDoListRepository.GetAsync(userId, id) ?? throw new NotFoundException(nameof(Get), id);
 
 
             var authResult = await _authorizationService.AuthorizeAsync(User, toDoList, "ToDoListOwner");
@@ -64,14 +65,14 @@ namespace HelloToAsp.Controllers
 
         // PUT: api/ToDoLists/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutToDoList(int id, ToDoListUpdateDto toDoList)
+        public async Task<IActionResult> Put(int id, ToDoListUpdateDto toDoList)
         {
             if (id != toDoList.Id)
             {
                 return BadRequest();
             }
 
-            var existingTask = await _toDoListRepository.GetAsync(id) ?? throw new NotFoundException(nameof(PutToDoList), id);
+            var existingTask = await _toDoListRepository.GetAsync(id) ?? throw new NotFoundException(nameof(Put), id);
 
             var authResult = await _authorizationService.AuthorizeAsync(User, existingTask, "ToDoListOwner");
 
@@ -103,7 +104,7 @@ namespace HelloToAsp.Controllers
 
         // POST: api/ToDoLists
         [HttpPost]
-        public async Task<ActionResult> PostToDoList([FromForm] ToDoListCreateDto toDoList)
+        public async Task<ActionResult> Post([FromForm] ToDoListCreateDto toDoList)
         {
             var newTask = _mapper.Map<ToDoList>(toDoList);
 
@@ -116,9 +117,9 @@ namespace HelloToAsp.Controllers
 
         // DELETE: api/ToDoLists/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteToDoList(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var toDoList = await _toDoListRepository.GetAsync(id) ?? throw new NotFoundException(nameof(DeleteToDoList), id);
+            var toDoList = await _toDoListRepository.GetAsync(id) ?? throw new NotFoundException(nameof(Delete), id);
 
             var authResult = await _authorizationService.AuthorizeAsync(User, toDoList, "ToDoListOwner");
 

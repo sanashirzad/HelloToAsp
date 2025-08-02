@@ -69,3 +69,62 @@ HelloToAsp.Exceptions.NotFoundException: GetToDoList 3 was not found
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
    at HelloToAsp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\Middleware\ExceptionMiddleware.cs:line 23
+2025-08-02 11:41:57.786 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 11:41:57.809 +03:30 [INF] Hosting environment: Development
+2025-08-02 11:41:57.810 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-02 11:42:06.000 +03:30 [INF] HTTP GET / responded 404 in 797.5934 ms
+2025-08-02 11:42:36.505 +03:30 [INF] HTTP GET /WeatherForecast responded 200 in 39.5526 ms
+2025-08-02 11:42:43.540 +03:30 [INF] HTTP GET /WeatherForecast responded 400 in 7.1253 ms
+2025-08-02 11:42:49.595 +03:30 [INF] HTTP GET /WeatherForecast responded 200 in 1.2854 ms
+2025-08-02 11:42:53.772 +03:30 [INF] HTTP GET /WeatherForecast responded 400 in 0.9166 ms
+2025-08-02 11:43:12.432 +03:30 [INF] HTTP GET /WeatherForecast responded 400 in 0.6573 ms
+2025-08-02 11:43:24.258 +03:30 [INF] HTTP GET /WeatherForecast responded 400 in 0.6702 ms
+2025-08-02 11:43:29.773 +03:30 [INF] HTTP GET /WeatherForecast responded 200 in 0.4747 ms
+2025-08-02 11:43:33.943 +03:30 [INF] HTTP GET /WeatherForecast responded 400 in 0.4411 ms
+2025-08-02 11:44:13.578 +03:30 [INF] HTTP GET /WeatherForecast responded 200 in 1.0801 ms
+2025-08-02 11:49:58.275 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 11:49:58.323 +03:30 [INF] Hosting environment: Development
+2025-08-02 11:49:58.324 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-02 11:49:58.327 +03:30 [INF] HTTP GET / responded 404 in 39.2085 ms
+2025-08-02 11:50:44.413 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 11:50:44.641 +03:30 [INF] Hosting environment: Development
+2025-08-02 11:50:44.641 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-02 11:50:44.647 +03:30 [INF] HTTP GET / responded 404 in 223.1079 ms
+2025-08-02 11:53:11.112 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 11:53:11.381 +03:30 [INF] Hosting environment: Development
+2025-08-02 11:53:11.382 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-02 11:53:11.387 +03:30 [INF] HTTP GET / responded 404 in 257.6479 ms
+2025-08-02 11:53:57.884 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 11:53:57.962 +03:30 [INF] Hosting environment: Development
+2025-08-02 11:53:57.963 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-02 11:53:57.967 +03:30 [INF] HTTP GET / responded 404 in 65.6126 ms
+2025-08-02 11:54:00.453 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v{version}/ToDoLists" for actions - HelloToAsp.Controllers.v2.ToDoListsController.Get (HelloToAsp), HelloToAsp.Controllers.v1.ToDoListsController.Get (HelloToAsp). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-02 11:54:23.725 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 11:54:23.890 +03:30 [INF] Hosting environment: Development
+2025-08-02 11:54:23.891 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-02 11:54:23.900 +03:30 [INF] HTTP GET / responded 404 in 84.5249 ms
+2025-08-02 11:54:24.337 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/v{version}/ToDoLists" for actions - HelloToAsp.Controllers.v2.ToDoListsController.Get (HelloToAsp), HelloToAsp.Controllers.v1.ToDoListsController.Get (HelloToAsp). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-08-02 11:54:44.964 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-02 11:54:45.006 +03:30 [INF] Hosting environment: Development
+2025-08-02 11:54:45.007 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-02 11:54:45.011 +03:30 [INF] HTTP GET / responded 404 in 33.5136 ms
+2025-08-02 11:54:55.085 +03:30 [INF] HTTP GET /api/v1/ToDoLists responded 200 in 34.5201 ms
+2025-08-02 11:55:06.419 +03:30 [INF] HTTP GET /api/v2/ToDoLists responded 401 in 15.4532 ms
