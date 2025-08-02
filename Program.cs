@@ -139,6 +139,12 @@ builder.Services.AddAuthorizationBuilder()
     .AddPolicy("ToDoListOwner", policy =>
         policy.Requirements.Add(new ToDoListOwnerRequirement()));
 
+builder.Services.AddResponseCaching(options =>
+{
+    options.MaximumBodySize = 1024; // in bytes
+    options.UseCaseSensitivePaths = true;
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -158,6 +164,22 @@ app.UseSerilogRequestLogging();
 app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
+
+app.UseResponseCaching();
+
+app.Use(async (context, next) =>
+{
+    context.Response.GetTypedHeaders().CacheControl =
+        new Microsoft.Net.Http.Headers.CacheControlHeaderValue()
+        {
+            Public = true,
+            MaxAge = TimeSpan.FromSeconds(10)
+        };
+    context.Response.Headers[Microsoft.Net.Http.Headers.HeaderNames.Vary] =
+        new string[] { "Accept-Encoding" };
+
+    await next();
+}); // here we put middleware code directly in our program.cs
 
 app.UseAuthentication();
 app.UseAuthorization();
