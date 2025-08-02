@@ -2,6 +2,7 @@
 using HelloToAsp.Contracts;
 using HelloToAsp.Data;
 using HelloToAsp.DB;
+using HelloToAsp.Middleware;
 using HelloToAsp.Policies.Handlers;
 using HelloToAsp.Policies.Requirements;
 using HelloToAsp.Repositories;
@@ -129,6 +130,8 @@ if (app.Environment.IsDevelopment())
 }
 
 // bellow codes are middleware pipeline
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseSerilogRequestLogging();
 

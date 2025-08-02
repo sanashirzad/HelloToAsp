@@ -2,6 +2,7 @@
 using HelloToAsp.Contracts;
 using HelloToAsp.Data;
 using HelloToAsp.Dtos.User;
+using HelloToAsp.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -41,12 +42,7 @@ namespace HelloToAsp.Controllers
         {
             //var user = await _context.Users.FindAsync(id);
 
-            var user = await _usersRepository.GetDetails(id);
-
-            if (user == null)
-            {
-                return NotFound();
-            }
+            var user = await _usersRepository.GetDetails(id) ?? throw new NotFoundException(nameof(GetUser), id);
 
             var mappedUser = _mapper.Map<GetDetailsDto>(user);
 
@@ -68,11 +64,7 @@ namespace HelloToAsp.Controllers
 
             //_context.Entry(user).State = EntityState.Modified;
 
-            var existingUser = await _usersRepository.GetAsync(id);
-            if (existingUser == null)
-            {
-                return NotFound();
-            }
+            var existingUser = await _usersRepository.GetAsync(id) ?? throw new NotFoundException(nameof(PutUser), id);
 
             // Map the DTO to the existing entity
             _mapper.Map(user, existingUser);
@@ -120,11 +112,7 @@ namespace HelloToAsp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            var user = await _usersRepository.GetAsync(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
+            var user = await _usersRepository.GetAsync(id) ?? throw new NotFoundException(nameof(DeleteUser), id);
 
             await _usersRepository.DeleteAsync(id);
 

@@ -27,28 +27,30 @@ namespace HelloToAsp.Controllers
         {
             _logger.LogInformation($"Registration Attempt for {userDto.PhoneNumber}");
 
-            try
+            //try
+            //{
+
+            var errors = await _authManager.Register(userDto);
+
+            if (errors.Any())
             {
-                var errors = await _authManager.Register(userDto);
-
-                if (errors.Any())
+                foreach (var error in errors)
                 {
-                    foreach (var error in errors)
-                    {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
-
-                    return BadRequest(ModelState);
+                    ModelState.AddModelError(error.Code, error.Description);
                 }
 
-                return Ok();
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Something Went Wrong in the {nameof(Register)} - Registration Attempt for {userDto.PhoneNumber}");
 
-                return Problem($"Something Went Wrong in the {nameof(Register)}", statusCode: 500);
-            }
+            return Ok();
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    _logger.LogError(ex, $"Something Went Wrong in the {nameof(Register)} - Registration Attempt for {userDto.PhoneNumber}");
+
+            //    return Problem($"Something Went Wrong in the {nameof(Register)}", statusCode: 500);
+            //}
 
         }
 

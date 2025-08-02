@@ -2,6 +2,7 @@
 using HelloToAsp.Contracts;
 using HelloToAsp.Data;
 using HelloToAsp.Dtos.ToDoList;
+using HelloToAsp.Exceptions;
 using HelloToAsp.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -46,12 +47,8 @@ namespace HelloToAsp.Controllers
         {
             var userId = User.GetAuthUserId(); // fetch auth id globally
 
-            var toDoList = await _toDoListRepository.GetAsync(userId, id);
+            var toDoList = await _toDoListRepository.GetAsync(userId, id) ?? throw new NotFoundException(nameof(GetToDoList), id);
 
-            if (toDoList == null)
-            {
-                return NotFound();
-            }
 
             var authResult = await _authorizationService.AuthorizeAsync(User, toDoList, "ToDoListOwner");
 
@@ -74,11 +71,7 @@ namespace HelloToAsp.Controllers
                 return BadRequest();
             }
 
-            var existingTask = await _toDoListRepository.GetAsync(id);
-            if (existingTask == null)
-            {
-                return NotFound();
-            }
+            var existingTask = await _toDoListRepository.GetAsync(id) ?? throw new NotFoundException(nameof(PutToDoList), id);
 
             var authResult = await _authorizationService.AuthorizeAsync(User, existingTask, "ToDoListOwner");
 
@@ -125,11 +118,7 @@ namespace HelloToAsp.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteToDoList(int id)
         {
-            var toDoList = await _toDoListRepository.GetAsync(id);
-            if (toDoList == null)
-            {
-                return NotFound();
-            }
+            var toDoList = await _toDoListRepository.GetAsync(id) ?? throw new NotFoundException(nameof(DeleteToDoList), id);
 
             var authResult = await _authorizationService.AuthorizeAsync(User, toDoList, "ToDoListOwner");
 
