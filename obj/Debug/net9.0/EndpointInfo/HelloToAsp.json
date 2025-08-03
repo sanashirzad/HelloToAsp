@@ -753,6 +753,67 @@
         }
       }
     },
+    "/api/Users/GetPagedUsers": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "parameters": [
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "X-Version",
+            "in": "header",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "text/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Users/{id}": {
       "get": {
         "tags": [
@@ -1067,6 +1128,35 @@
           "id": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetDtoPaginationResponseDto": {
+        "type": "object",
+        "properties": {
+          "currentPage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPage": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "size": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "records": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

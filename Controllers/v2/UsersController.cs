@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using HelloToAsp.Contracts;
 using HelloToAsp.Data;
+using HelloToAsp.Dtos;
 using HelloToAsp.Dtos.User;
 using HelloToAsp.Exceptions;
 using Microsoft.AspNetCore.Authorization;
@@ -34,6 +35,14 @@ namespace HelloToAsp.Controllers.v2
             var mappedUsers = _mapper.Map<List<GetDto>>(users);
 
             return Ok(mappedUsers);
+        }
+
+        // GET: api/Users?StartIndex=0&Page=1&Size=5
+        [HttpGet("GetPagedUsers")]
+        public async Task<ActionResult<PaginationResponseDto<GetDto>>> GetPagedUsers([FromQuery] PaginationRequestDto paginationDto)
+        {
+            var pagedUsers = await _usersRepository.GetAllAsync<GetDto>(paginationDto);
+            return Ok(pagedUsers);
         }
 
         // GET: api/Users/5

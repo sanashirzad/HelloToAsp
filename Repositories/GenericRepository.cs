@@ -1,5 +1,8 @@
-﻿using HelloToAsp.Contracts;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using HelloToAsp.Contracts;
 using HelloToAsp.DB;
+using HelloToAsp.Dtos;
 using Microsoft.EntityFrameworkCore;
 
 namespace HelloToAsp.Repositories
@@ -7,9 +10,12 @@ namespace HelloToAsp.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly ToDoListContext _context;
-        public GenericRepository(ToDoListContext context)
+        private readonly IMapper _mapper;
+
+        public GenericRepository(ToDoListContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         public async Task<T> AddAsync(T entity)
@@ -35,6 +41,26 @@ namespace HelloToAsp.Repositories
         public async Task<List<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
+        }
+
+        public async Task<PaginationResponseDto<TResult>> GetAllAsync<TResult>(PaginationRequestDto paginationDto)
+        {
+            var totalSize = await _context.Set<T>().CountAsync();
+
+            var items = await _context.Set<T>()
+                .Skip((paginationDto.Page - 1) * paginationDto.Size)
+                .Take(paginationDto.Size)
+                .ProjectTo<TResult>(_mapper.ConfigurationProvider)
+                .ToListAsync();
+
+            return new PaginationResponseDto<TResult>
+            {
+                Records = items,
+                Size = paginationDto.Size,
+                TotalCount = totalSize,
+                CurrentPage = paginationDto.Page,
+                TotalPage = (int)Math.Ceiling((double)totalSize / paginationDto.Size)
+            };
         }
 
         public async Task<T> GetAsync(int? id)

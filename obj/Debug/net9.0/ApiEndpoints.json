@@ -388,6 +388,47 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "HelloToAsp.Controllers.v2.UsersController",
+    "Method": "GetPagedUsers",
+    "RelativePath": "api/Users/GetPagedUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Size",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "X-Version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "HelloToAsp.Dtos.PaginationResponseDto\u00601[[HelloToAsp.Dtos.User.GetDto, HelloToAsp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain; ver=1.0",
+          "application/json; ver=1.0",
+          "text/json; ver=1.0"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "HelloToAsp.Controllers.v1.ToDoListsController",
     "Method": "Get",
     "RelativePath": "api/v{version}/ToDoLists",

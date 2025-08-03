@@ -1,4 +1,5 @@
-﻿using HelloToAsp.Contracts;
+﻿using AutoMapper;
+using HelloToAsp.Contracts;
 using HelloToAsp.Data;
 using HelloToAsp.DB;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +10,7 @@ namespace HelloToAsp.Repositories
     {
         private readonly ToDoListContext _context;
 
-        public UsersRepository(ToDoListContext context) : base(context)
+        public UsersRepository(ToDoListContext context, IMapper mapper) : base(context, mapper)
         {
             _context = context;
         }
