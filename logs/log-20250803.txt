@@ -31,3 +31,11 @@
 2025-08-03 09:01:46.912 +03:30 [INF] HTTP GET /api/Users/GetPagedUsers responded 200 in 21.2498 ms
 2025-08-03 09:02:04.240 +03:30 [INF] HTTP GET /api/Users/GetPagedUsers responded 200 in 9.1664 ms
 2025-08-03 09:02:16.321 +03:30 [INF] HTTP GET /api/Users/GetPagedUsers responded 200 in 5.3206 ms
+2025-08-03 09:49:51.136 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-03 09:49:51.157 +03:30 [INF] Hosting environment: Development
+2025-08-03 09:49:51.158 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-03 09:49:51.805 +03:30 [INF] HTTP GET / responded 404 in 648.2836 ms
+2025-08-03 09:54:54.902 +03:30 [INF] HTTP GET /api/Users responded 401 in 38.6562 ms
+2025-08-03 09:55:39.767 +03:30 [INF] HTTP GET /api/v2/ToDoLists responded 401 in 115.3678 ms
+2025-08-03 09:56:11.175 +03:30 [INF] HTTP POST /api/Auth/login responded 200 in 2005.4711 ms
+2025-08-03 09:56:33.420 +03:30 [INF] HTTP GET /api/v2/ToDoLists responded 200 in 897.4153 ms

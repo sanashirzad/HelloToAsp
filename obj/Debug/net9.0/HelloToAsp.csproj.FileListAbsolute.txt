@@ -292,3 +292,8 @@ D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Serilog.Sinks.Seq.dll
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.dll
 D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.AspNetCore.OData.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.OData.Core.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.OData.Edm.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.OData.ModelBuilder.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp\bin\Debug\net9.0\Microsoft.Spatial.dll

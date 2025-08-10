@@ -6,6 +6,7 @@ using HelloToAsp.Exceptions;
 using HelloToAsp.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Microsoft.EntityFrameworkCore;
 
 namespace HelloToAsp.Controllers.v2
@@ -33,6 +34,7 @@ namespace HelloToAsp.Controllers.v2
 
         // GET: api/ToDoLists
         [HttpGet]
+        [EnableQuery]
         public async Task<ActionResult<IEnumerable<ToDoListDto>>> Get()
         {
             var userId = User.GetAuthUserId();

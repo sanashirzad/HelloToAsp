@@ -85,12 +85,197 @@
           "400": {
             "description": "Bad Request",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
                 }
@@ -177,12 +362,197 @@
           "400": {
             "description": "Bad Request",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
                 }
@@ -257,12 +627,197 @@
           "400": {
             "description": "Bad Request",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ProblemDetails"
                 }
@@ -316,7 +871,87 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "type": "array",
                   "items": {
@@ -325,6 +960,222 @@
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ToDoList"
+                  }
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "type": "array",
                   "items": {
@@ -374,7 +1225,192 @@
         ],
         "requestBody": {
           "content": {
+            "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
             "application/json; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/xml; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "text/plain; ver=1.0": {
               "schema": {
                 "$ref": "#/components/schemas/ToDoList"
               }
@@ -395,12 +1431,197 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ToDoList"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ToDoList"
                 }
@@ -457,12 +1678,197 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ToDoList"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ToDoList"
                 }
@@ -515,7 +1921,192 @@
         ],
         "requestBody": {
           "content": {
+            "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
             "application/json; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;IEEE754Compatible=false; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/json;IEEE754Compatible=true; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "application/xml; ver=1.0": {
+              "schema": {
+                "$ref": "#/components/schemas/ToDoList"
+              }
+            },
+            "text/plain; ver=1.0": {
               "schema": {
                 "$ref": "#/components/schemas/ToDoList"
               }
@@ -536,12 +2127,197 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ToDoList"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/ToDoList"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/ToDoList"
                 }
@@ -624,7 +2400,87 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "type": "array",
                   "items": {
@@ -633,6 +2489,222 @@
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetDto"
+                  }
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "type": "array",
                   "items": {
@@ -794,12 +2866,197 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/GetDtoPaginationResponseDto"
                 }
@@ -848,12 +3105,197 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/GetDetailsDto"
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDetailsDto"
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "$ref": "#/components/schemas/GetDetailsDto"
                 }
@@ -1027,7 +3469,87 @@
           "200": {
             "description": "OK",
             "content": {
-              "text/plain; ver=1.0": {
+              "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false; ver=1.0": {
                 "schema": {
                   "type": "array",
                   "items": {
@@ -1036,6 +3558,222 @@
                 }
               },
               "application/json; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;IEEE754Compatible=false; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json;IEEE754Compatible=true; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/xml; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/plain; ver=1.0": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/octet-stream; ver=1.0": {
                 "schema": {
                   "type": "array",
                   "items": {

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -26,8 +27,6 @@ builder.Services.AddDbContext<ToDoListContext>(options =>
 });
 
 // Add services to the container.
-
-builder.Services.AddControllers();
 
 builder.Services.AddSwaggerGen(option =>
 {
@@ -143,6 +142,11 @@ builder.Services.AddResponseCaching(options =>
 {
     options.MaximumBodySize = 1024; // in bytes
     options.UseCaseSensitivePaths = true;
+});
+
+builder.Services.AddControllers().AddOData(options =>
+{
+    options.Select().Filter().OrderBy();
 });
 
 var app = builder.Build();
