@@ -1,5 +1,5 @@
-﻿using HelloToAsp.Contracts;
-using HelloToAsp.Dtos.Auth;
+﻿using HelloToAsp.Core.Contracts;
+using HelloToAsp.Core.Dtos.Auth;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelloToAsp.Controllers.v2

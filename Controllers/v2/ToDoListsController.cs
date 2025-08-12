@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using HelloToAsp.Contracts;
+using HelloToAsp.Core.Contracts;
 using HelloToAsp.Data;
-using HelloToAsp.Dtos.ToDoList;
-using HelloToAsp.Exceptions;
+using HelloToAsp.Core.Dtos.ToDoList;
+using HelloToAsp.Core.Exceptions;
 using HelloToAsp.Extensions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

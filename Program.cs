@@ -1,11 +1,11 @@
-﻿using HelloToAsp.Configs;
-using HelloToAsp.Contracts;
+﻿using HelloToAsp.Core.Configs;
+using HelloToAsp.Core.Contracts;
 using HelloToAsp.Data;
-using HelloToAsp.DB;
-using HelloToAsp.Middleware;
+using HelloToAsp.Data.DB;
+using HelloToAsp.Core.Middleware;
 using HelloToAsp.Policies.Handlers;
 using HelloToAsp.Policies.Requirements;
-using HelloToAsp.Repositories;
+using HelloToAsp.Core.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;

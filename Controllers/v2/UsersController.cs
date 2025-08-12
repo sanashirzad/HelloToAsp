@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using HelloToAsp.Contracts;
+using HelloToAsp.Core.Contracts;
 using HelloToAsp.Data;
-using HelloToAsp.Dtos;
-using HelloToAsp.Dtos.User;
-using HelloToAsp.Exceptions;
+using HelloToAsp.Core.Dtos;
+using HelloToAsp.Core.Dtos.User;
+using HelloToAsp.Core.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;

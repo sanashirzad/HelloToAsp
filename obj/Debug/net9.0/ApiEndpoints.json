@@ -313,7 +313,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[HelloToAsp.Dtos.User.GetDto, HelloToAsp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HelloToAsp.Core.Dtos.User.GetDto, HelloToAsp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0",
           "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0",
@@ -450,7 +450,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "HelloToAsp.Dtos.User.GetDetailsDto",
+        "Type": "HelloToAsp.Core.Dtos.User.GetDetailsDto",
         "MediaTypes": [
           "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0",
           "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0",
@@ -618,7 +618,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "HelloToAsp.Dtos.PaginationResponseDto\u00601[[HelloToAsp.Dtos.User.GetDto, HelloToAsp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "HelloToAsp.Core.Dtos.PaginationResponseDto\u00601[[HelloToAsp.Core.Dtos.User.GetDto, HelloToAsp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0",
           "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0",
@@ -694,7 +694,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[HelloToAsp.Data.ToDoList, HelloToAsp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HelloToAsp.Data.ToDoList, HelloToAsp.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0",
           "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0",
@@ -851,7 +851,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[HelloToAsp.Dtos.ToDoList.ToDoListDto, HelloToAsp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HelloToAsp.Core.Dtos.ToDoList.ToDoListDto, HelloToAsp.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "application/json;odata.metadata=minimal;odata.streaming=true; ver=2.0",
           "application/json;odata.metadata=minimal;odata.streaming=false; ver=2.0",
@@ -1181,7 +1181,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "HelloToAsp.Dtos.ToDoList.ToDoListGetDetailsDto",
+        "Type": "HelloToAsp.Core.Dtos.ToDoList.ToDoListGetDetailsDto",
         "MediaTypes": [
           "application/json;odata.metadata=minimal;odata.streaming=true; ver=2.0",
           "application/json;odata.metadata=minimal;odata.streaming=false; ver=2.0",
@@ -1246,7 +1246,7 @@
       },
       {
         "Name": "toDoList",
-        "Type": "HelloToAsp.Dtos.ToDoList.ToDoListUpdateDto",
+        "Type": "HelloToAsp.Core.Dtos.ToDoList.ToDoListUpdateDto",
         "IsRequired": true
       },
       {
@@ -1297,77 +1297,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloToAsp.Controllers.v1.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "api-version",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "X-Version",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[HelloToAsp.WeatherForecast, HelloToAsp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "application/json;odata.metadata=minimal;odata.streaming=true; ver=1.0",
-          "application/json;odata.metadata=minimal;odata.streaming=false; ver=1.0",
-          "application/json;odata.metadata=minimal; ver=1.0",
-          "application/json;odata.metadata=full;odata.streaming=true; ver=1.0",
-          "application/json;odata.metadata=full;odata.streaming=false; ver=1.0",
-          "application/json;odata.metadata=full; ver=1.0",
-          "application/json;odata.metadata=none;odata.streaming=true; ver=1.0",
-          "application/json;odata.metadata=none;odata.streaming=false; ver=1.0",
-          "application/json;odata.metadata=none; ver=1.0",
-          "application/json;odata.streaming=true; ver=1.0",
-          "application/json;odata.streaming=false; ver=1.0",
-          "application/json; ver=1.0",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=minimal;odata.streaming=false;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=minimal;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=full;odata.streaming=true;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=full;odata.streaming=false;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=full;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=full;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=none;odata.streaming=true;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.metadata=none;odata.streaming=false;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=none;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.metadata=none;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.streaming=true;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.streaming=true;IEEE754Compatible=true; ver=1.0",
-          "application/json;odata.streaming=false;IEEE754Compatible=false; ver=1.0",
-          "application/json;odata.streaming=false;IEEE754Compatible=true; ver=1.0",
-          "application/json;IEEE754Compatible=false; ver=1.0",
-          "application/json;IEEE754Compatible=true; ver=1.0",
-          "application/xml; ver=1.0",
-          "application/json; ver=1.0",
-          "text/plain; ver=1.0",
-          "application/octet-stream; ver=1.0",
-          "text/plain; ver=1.0",
-          "application/json; ver=1.0",
-          "text/json; ver=1.0"
-        ],
-        "StatusCode": 200
-      }
-    ],
-    "EndpointName": "GetWeatherForecast"
   }
 ]
