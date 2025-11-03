@@ -1,0 +1,17 @@
+2025-08-10 09:52:08.997 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-10 09:52:09.022 +03:30 [INF] Hosting environment: Development
+2025-08-10 09:52:09.022 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-10 09:52:09.687 +03:30 [INF] HTTP GET / responded 404 in 644.3850 ms
+2025-08-10 09:52:20.453 +03:30 [INF] HTTP GET /se responded 404 in 0.5326 ms
+2025-08-10 11:15:35.724 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-10 11:15:35.764 +03:30 [INF] Hosting environment: Development
+2025-08-10 11:15:35.765 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-10 11:15:35.777 +03:30 [INF] HTTP GET / responded 404 in 41.6253 ms
+2025-08-10 11:27:16.398 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-10 11:27:16.437 +03:30 [INF] Hosting environment: Development
+2025-08-10 11:27:16.438 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-10 11:27:16.449 +03:30 [INF] HTTP GET / responded 404 in 39.7411 ms
+2025-08-10 11:27:55.675 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-10 11:27:55.715 +03:30 [INF] Hosting environment: Development
+2025-08-10 11:27:55.715 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-08-10 11:27:55.727 +03:30 [INF] HTTP GET / responded 404 in 40.5272 ms
