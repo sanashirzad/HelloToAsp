@@ -1,0 +1,13 @@
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\bin\Debug\net9.0\HelloToAsp.Data.deps.json
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\bin\Debug\net9.0\HelloToAsp.Data.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\bin\Debug\net9.0\HelloToAsp.Data.pdb
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.csproj.AssemblyReference.cache
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.AssemblyInfoInputs.cache
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.AssemblyInfo.cs
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.csproj.CoreCompileInputs.cache
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.sourcelink.json
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\refint\HelloToAsp.Data.dll
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\HelloToAsp.Data.pdb
+D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp.Data\obj\Debug\net9.0\ref\HelloToAsp.Data.dll
