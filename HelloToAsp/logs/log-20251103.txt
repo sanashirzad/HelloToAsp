@@ -1,0 +1,4 @@
+2025-11-03 11:55:49.513 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-03 11:55:49.568 +03:30 [INF] Hosting environment: Development
+2025-11-03 11:55:49.568 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-11-03 11:55:49.746 +03:30 [INF] HTTP GET / responded 404 in 115.2275 ms

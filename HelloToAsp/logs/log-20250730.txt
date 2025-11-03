@@ -1,0 +1,8 @@
+2025-07-30 13:22:37.622 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-30 13:22:37.768 +03:30 [INF] Hosting environment: Development
+2025-07-30 13:22:37.769 +03:30 [INF] Content root path: D:\sana-shirzad\practicing\HelloToAsp\HelloToAsp
+2025-07-30 13:22:38.565 +03:30 [INF] HTTP GET / responded 404 in 749.2066 ms
+2025-07-30 13:23:38.245 +03:30 [INF] Registration Attempt for 09371594553
+2025-07-30 13:23:39.894 +03:30 [INF] HTTP POST /api/Auth/register responded 400 in 2072.3886 ms
+2025-07-30 13:24:13.589 +03:30 [INF] Registration Attempt for 09371594554
+2025-07-30 13:24:13.836 +03:30 [INF] HTTP POST /api/Auth/register responded 200 in 385.7661 ms
